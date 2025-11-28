@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINALS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header fixed-top py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+       <a href="#" class="logo">
+  <img src="assets/img/logo.png" alt="Zume Logo" height="50">
+</a>
+       <nav class="navbar">
+    <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#works" class="nav-link">Works</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="page1/gallery.html">Gallery</a></li>
+                <li><a class="dropdown-item" href="page2/service.html">Services</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+    </div>
+</header>
+<br><br><br>
+<!-- HOME SECTION -->
+<section class="home d-flex align-items-center">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-white home-content">
+                <h1>Hi, I'm Sydney Yzzabelle</h1>
+                <h3 class="text-warning">Multimedia Artist Student</h3>
+
+                <div class="text-box mt-4 p-3 rounded bg-dark bg-opacity-50 shadow">
+                    <p class="bottom">I'm currently developing my skills in digital art, video editing, and graphic design. While I'm not yet a professional, I approach every project with dedication and a strong desire to improve. I'm passionate about creating clean, modern, and meaningful visuals, and I'm steadily working toward becoming a fully skilled multimedia artist.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="assets/img/nekoma.png" class="img-fluid feature-img" alt="Feature Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WORKS SECTION -->
+<section id="works" class="works-section py-5 bg-dark bg-opacity-50">
+    <div class="container">
+        <h1 class="fw-bold" style="color: #ffd700;">My Works</h1>
+        <h2 class="text-center text-white mb-5">Digital Arts</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white h-100 shadow-sm">
+                    <div class="card-img-top image-box">
+    <img src="assets/img/art 1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white h-100 shadow-sm">
+                    <div class="card-img-top image-box">
+    <img src="assets/img/art 2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white h-100 shadow-sm">
+                    <div class="card-img-top image-box">
+    <img src="assets/img/art 4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-center text-white mb-5">Graphics Designs/Posters</h2>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white h-100 shadow-sm">
+                    <div class="card-img-top image-box">
+    <img src="assets/img/LAB ACTIVITY 4 - MOVIE POSTER.gif" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-white h-100 shadow-sm">
+                     <div class="card-img-top image-box">
+    <img src="assets/img/poster 1.jpg" alt="">
+                     </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-dark text-white h-100 shadow-sm">
+                    <div class="card-img-top image-box">
+    <img src="assets/img/MIDTERM POSTER.png" alt="">
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- CONTACT SECTION -->
+</section>
+<br><br><br>
+<section id="contact" class="works-section py-5">
+  <div class="container">
+    <div class="text-center mb-5 text-white">
+      <h1 class="fw-bold" style="color: #ffd700;">CONTACT</h1>
+      <p class="text-light">For inquiries, collaborations, or messages—contact me anytime.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 bg-transparent">
+          <div class="card-body text-center text-white">
+            <h5 class="card-title fw-bold">Contact Info</h5>
+            <p class="card-text mb-1"><strong>Email:</strong> spbolosan@fit.edu.ph</p>
+            <p class="card-text mb-1"><strong>Personal Email:</strong>sydneybolosan@gmail.com</p>
+            <div class="mt-3">
+              <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+let lastScrollY = window.scrollY;
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+    if(window.scrollY > lastScrollY) {
+        header.style.top = "-600px";
+    } else {
+        header.style.top = "0";
+    }
+    lastScrollY = window.scrollY;
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownToggle = document.querySelector(".dropdown-toggle");
+  const dropdownMenu = dropdownToggle.parentElement;
+
+  dropdownMenu.addEventListener("hidden.bs.dropdown", function () {
+    dropdownToggle.style.color = "#ffffff";
+  });
+
+  dropdownMenu.addEventListener("shown.bs.dropdown", function () {
+    dropdownToggle.style.color = "#FFD700";
+  });
+});
+</script>
+
+
+
+</body>
+</html>
+

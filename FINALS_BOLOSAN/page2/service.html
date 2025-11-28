@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <header class="header fixed-top py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+       <a href="#" class="logo">
+  <img src="assets/img/logo.png" alt="Zume Logo" height="50">
+</a>
+       <nav class="navbar">
+    <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="../index.html #works" class="nav-link">Works</a>
+        </li>
+        <li class="nav-item">
+            <a href="../Index.html #contact" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="../page1/gallery.html">Gallery</a></li>
+                <li><a class="dropdown-item" href="service.html">Services</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+    </div>
+    </header>
+
+    <section id="services">
+  <div class="container">
+    <br><br>
+     <h1 class="services-title mb-4">Commissions / Services</h1>
+    <p class="mb-5">
+      Here’s what I can make for you, along with a rough idea of the prices.
+    </p>
+   <div class="row g-4 justify-content-center">
+  <div class="col-md-6 col-lg-3 d-flex">
+    <div class="service-card shadow-sm p-4 flex-fill">
+      <h5 class="card-title">Traditional Arts</h5>
+      <p class="card-text">Custom sketches or mixed media.<br><strong>Price:  ₱200–₱800</strong></p>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3 d-flex">
+    <div class="service-card shadow-sm p-4 flex-fill">
+      <h5 class="card-title">Digital Art</h5>
+      <p class="card-text">Character designs, fanart, illustrations.<br><strong>Price: ₱150–₱600</strong></p>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3 d-flex">
+    <div class="service-card shadow-sm p-4 flex-fill">
+      <h5 class="card-title">Graphic Design</h5>
+      <p class="card-text">Posters, banners, logos, branding.<br><strong>Price: ₱250–₱900</strong></p>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3 d-flex">
+    <div class="service-card shadow-sm p-4 flex-fill">
+      <h5 class="card-title">Video Editing</h5>
+      <p class="card-text">Short films, vlogs, or promo videos.<br><strong>Price: ₱400–₱1,200</strong></p>
+    </div>
+  </div>
+</div>
+  </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+let lastScrollY = window.scrollY;
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+    if(window.scrollY > lastScrollY) {
+        header.style.top = "-600px";
+    } else {
+        header.style.top = "0";
+    }
+    lastScrollY = window.scrollY;
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownToggle = document.querySelector(".dropdown-toggle");
+  const dropdownMenu = dropdownToggle.parentElement;
+
+  dropdownMenu.addEventListener("hidden.bs.dropdown", function () {
+    dropdownToggle.style.color = "#ffffff";
+  });
+
+  dropdownMenu.addEventListener("shown.bs.dropdown", function () {
+    dropdownToggle.style.color = "#FFD700";
+  });
+});
+</script>
+
+</body>
+</html>
